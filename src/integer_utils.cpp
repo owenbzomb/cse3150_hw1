@@ -18,9 +18,10 @@ void integer_utils::runIntegerOption() {
 	quotient = int_input/int_input2;
 	
 	cout << "Result: " << quotient << "\n";
-	int_input++;
+	int post_inc = int_input++;
+    int pre_inc = ++int_input;
 	
-	cout << "After post-increment: " << int_input << "\n";
-	cout << "After pre-increment: " << ++int_input << "\n";
+	cout << "After post-increment: " << post_inc << "\n";
+	cout << "After pre-increment: " << pre_inc << "\n";
 
 }
