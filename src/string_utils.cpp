@@ -9,7 +9,7 @@ int string_utils::runStringOption() {
 	char arr[20];
 	cout << "Enter string length:\n";
 	cin >> len;
-	
+
 	if(len >= 20){
 		cout << "Error: length is greater than 20\n";
 		return 1;
@@ -18,7 +18,7 @@ int string_utils::runStringOption() {
 	cin.ignore();
 	cout << "Enter string:\n";
 	getline(cin, input);
-				
+
 	for(int i = 0; i < input.length(); i++){
 		arr[i] = input[i];
 	}

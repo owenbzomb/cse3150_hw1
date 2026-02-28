@@ -13,14 +13,15 @@ double grade_utils::calculateGrade() {
 
 	if(type != "U" && type != "G"){
 		cout << "Invalid student type\n";
-		return -1;
+		return 1;
 	}
 	cout << "Enter a numeric grade: \n";
 	cin >> grade;
+	
 
 	if(grade < 0 || grade > 100){
-		cout << "Invalid grade";
-		return -1;
+		cout << "Invalid grade\n";
+		return 1;
 	}
 
 	string status;
